@@ -1,0 +1,207 @@
+.nav-bar{
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content: space-between;
+    background-color: rgb(222, 227, 228);
+    width:auto;
+    height:100px;
+    margin-bottom: 200px;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+
+}
+.nav-list{
+     list-style-type:none;
+     display:flex;
+
+}
+.nav-list li{
+    background-color:red;
+    color:white;
+    border:0.5px solid black;
+    border-radius:5px;
+    width: 120px;
+    height:25px;
+    margin:20px;
+    padding:10px;
+    text-align: center;
+    transition: width 1s,height 1s;
+}
+.nav-list li:hover{
+    cursor: pointer;
+    background-color: aqua;
+    color:red;
+    width:150px;
+    height:30px;
+
+}
+.nav-bar h1{
+    padding:20px;
+    font-size:30px;
+    font-family: 'Times New Roman', Times, serif;
+    transition:width 1s,height 1s transform;
+}
+.nav-bar h1:hover{
+    cursor: pointer;
+    zoom:120%;
+    color:red;
+}
+.intro{
+    background-image: url("nature-background.jpg");
+    color:white;
+    justify-content: center;
+    background-position: center bottom -40px;
+    background-position:80%;
+    margin:30px;
+
+}
+.intro{
+    display:flex;
+    margin-top:300px;
+    margin-left:20px;
+    height:70vh;
+    padding:20px;
+    column-gap:100px; 
+    align-items: center;
+}
+.intro img{
+    width:250px;
+    margin-bottom: 400px;
+    border-radius: 10px;
+
+}
+.intro img:hover{
+    zoom:120%;
+}
+.introd{
+    margin-bottom:400px;
+    color:white;
+}
+.introd:hover{
+    cursor:pointer;
+    zoom:140%;
+    color:black;
+}
+#about-me{
+    margin:70px;
+    margin-top:100px;
+    padding:100px;
+    font-size: large;
+    text-align: justify;
+}
+.nav-bar a{
+    text-decoration: none;
+    color:white;
+}
+#education{
+    margin:70px;
+    margin-top:100px;
+    padding:100px;
+    font-size: large;
+    text-align: justify;
+}
+
+#education h1{
+    margin-left:-20px;
+}
+#skills{
+    margin:70px;
+    margin-top:100px;
+    padding:100px;
+}
+.skills a{
+    text-decoration:none;
+    color:white;
+}
+.skills ul li{
+    display:flex;
+    flex-direction: column;
+    font-size: 20px;
+    width:300px;
+    height:30px;
+    text-align: center;
+    list-style-type: none;
+    background-color: black;
+    margin: 10px;
+    color:white;
+    border-radius: 5px;
+    padding:18px;
+    transition: width 1s,height 1s;
+}
+.skills ul li:hover{
+    width:500px;
+    height:50px;
+    background-color: red;
+    color:white;
+    font-size:30px;
+    cursor: pointer;
+}
+.nav-bar h1::after{
+    content:"😎";
+}
+#projects{
+    margin:70px;
+    margin-top:100px;
+    padding:100px;
+    font-size: large;
+    text-align: justify;
+}
+#projects h2{
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+    color:green;
+}
+#achievements{
+    margin:70px;
+    margin-top:100px;
+    padding:100px;
+    font-size: large;
+    text-align: justify;
+}
+#certifications{
+    margin:70px;
+    margin-top:100px;
+    padding:100px;
+    font-size: large;
+    text-align: justify;
+}
+#footer{
+    line-height: 20px;
+    text-align: center;
+    background-color: rgb(222, 227, 228);
+    padding:10px 0px;
+    font-size: 20px; 
+}
+a[name="skills"]::after{
+    content: "💪";
+}
+a[name="education"]::after{
+    content:"📔";
+}
+a[name="about-me"]::after{
+    content:"🧑‍💼";
+}
+a[name="projects"]::after{
+    content:"📑";
+}
+a[name=achievements]::after{
+    content:"🏆";
+}
+a[name=certifications]::after{
+    content:"🔖";
+}
+#certifications p::before{
+    content:"✓";
+}
+p[name="email"]::before{
+content:"📧 ";
+}
+p[name="number"]::before{
+content:"📞 ";
+}
+p[name="instagram"]::before{
+content:"📱 ";
+}
